@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>demo-01-dynamic-datasource</artifactId>
+    <artifactId>demo-02-insert-batch</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -18,18 +18,16 @@
     </properties>
 
     <dependencies>
-        <!-- 多数据源 -->
+        <!-- Web -->
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
-            <version>4.3.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- MySQL驱动 -->
+        <!-- 数据库驱动 -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
-            <version>8.2.0</version>
         </dependency>
 
         <!-- MyBatisPlus -->
@@ -38,12 +36,6 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.5.5</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
     </dependencies>
 
 </project>
