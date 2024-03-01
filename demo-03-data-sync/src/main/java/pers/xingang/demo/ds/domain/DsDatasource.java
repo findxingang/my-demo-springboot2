@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Getter;
 import lombok.Setter;
-import pers.xingang.demo.ds.enums.DsType;
+import pers.xingang.demo.common.enums.DbType;
 
 /**
  * <p>
@@ -23,56 +23,54 @@ public class DsDatasource {
     /**
      * ID
      */
-    @TableId("id")
+    @TableId
     private Long id;
 
     /**
      * 数据源名称
      */
-    @TableField("ds_name")
+    @TableField
     private String dsName;
 
     /**
      * 数据源类型
      */
-    @TableField("ds_type")
-    private DsType dsType;
+    @TableField
+    private DbType dsType;
 
     /**
      * 主机
      */
-    @TableField("host")
+    @TableField
     private String host;
 
     /**
      * 端口号
      */
-    @TableField("port")
+    @TableField
     private String port;
+
+    /**
+     * Schema
+     */
+    @TableField
+    private String dsSchema;
 
     /**
      * 用户名
      */
-    @TableField("username")
+    @TableField
     private String username;
 
     /**
      * 密码
      */
-    @TableField("password")
+    @TableField
     private String password;
 
-    public static final String ID = "id";
-
-    public static final String DS_NAME = "ds_name";
-
-    public static final String DS_TYPE = "ds_type";
-
-    public static final String HOST = "host";
-
-    public static final String PORT = "port";
-
-    public static final String USERNAME = "username";
-
-    public static final String PASSWORD = "password";
+    /**
+     * JDBC URL
+     */
+    @TableField
+    private String jdbcUrl;
 }

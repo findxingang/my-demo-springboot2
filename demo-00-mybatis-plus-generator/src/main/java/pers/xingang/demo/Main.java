@@ -105,6 +105,7 @@ public class Main implements CommandLineRunner{
                 .strategyConfig(builder -> {
                     builder.addInclude("t_datasource") // 设置需要生成的表名
                             .addTablePrefix("t_", "c_") // 设置过滤表前缀
+                            .addFieldPrefix("c_")      // 设置字段前缀
 
                             // 实体类配置
                             .entityBuilder()
