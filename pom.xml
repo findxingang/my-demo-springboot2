@@ -9,8 +9,10 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>demo-01-dynamic-datasource</module>
-        <module>demo-02-insert-batch</module>
+        <module>demo-00-mybatis-plus-generator</module>
+<!--        <module>demo-01-dynamic-datasource</module>-->
+<!--        <module>demo-02-insert-batch</module>-->
+        <module>demo-03-data-sync</module>
     </modules>
 
     <properties>
