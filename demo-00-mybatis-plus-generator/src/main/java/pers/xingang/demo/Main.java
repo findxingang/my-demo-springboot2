@@ -110,7 +110,7 @@ public class Main implements CommandLineRunner{
                             .entityBuilder()
                             .enableFileOverride()
                             .disableSerialVersionUID()
-                            .enableColumnConstant()
+                            // .enableColumnConstant()
                             // .enableChainModel()
                             .enableLombok()
                             .enableTableFieldAnnotation()
