@@ -72,4 +72,15 @@ public class DsDatasourceController {
     }
 
 
+    /**
+     * 连接数据源
+     * @param id 数据源ID
+     * @return OK
+     */
+    @PutMapping("{id}")
+    public ResponseEntity<?> connect(@PathVariable String id) {
+        return ResponseEntity.ok(datasourceService.connect(id));
+    }
+
+
 }

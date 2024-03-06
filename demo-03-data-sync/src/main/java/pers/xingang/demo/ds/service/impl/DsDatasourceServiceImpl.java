@@ -22,4 +22,9 @@ public class DsDatasourceServiceImpl extends ServiceImpl<DsDatasourceMapper, DsD
     public boolean createDataSource(DsDatasource dsDatasource) {
         return baseMapper.insert(dsDatasource) > 0;
     }
+
+    @Override
+    public boolean connect(String id) {
+        return false;
+    }
 }

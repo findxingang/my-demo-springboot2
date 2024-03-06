@@ -14,4 +14,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface IDsDatasourceService extends IService<DsDatasource> {
 
     boolean createDataSource(DsDatasource dsDatasource);
+
+    boolean connect(String id);
 }
