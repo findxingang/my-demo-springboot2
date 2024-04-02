@@ -12,8 +12,9 @@
         <module>demo-00-mybatis-plus-generator</module>
 <!--        <module>demo-01-dynamic-datasource</module>-->
 <!--        <module>demo-02-insert-batch</module>-->
-        <module>demo-03-data-sync</module>
-        <module>demo-04-java</module>
+<!--        <module>demo-03-data-sync</module>-->
+<!--        <module>demo-04-java</module>-->
+        <module>demo-05-redis</module>
     </modules>
 
     <properties>
