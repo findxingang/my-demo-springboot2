@@ -15,6 +15,7 @@
 <!--        <module>demo-03-data-sync</module>-->
 <!--        <module>demo-04-java</module>-->
         <module>demo-05-redis</module>
+        <module>demo-06-work</module>
     </modules>
 
     <properties>
