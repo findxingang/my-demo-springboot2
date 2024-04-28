@@ -2,6 +2,7 @@ package pers.xingang.demo;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.Order;
 import org.springframework.core.env.Environment;
@@ -12,6 +13,7 @@ import java.net.InetAddress;
  * @author xingang
  * @since 2024/04/02 10:21
  */
+@SpringBootApplication
 public class RedisApplication {
     public static void main(String[] args) {
         SpringApplication.run(RedisApplication.class, args);
