@@ -16,6 +16,7 @@
 <!--        <module>demo-04-java</module>-->
         <module>demo-05-redis</module>
         <module>demo-06-work</module>
+        <module>demo-05-redis</module>
     </modules>
 
     <properties>
