@@ -59,6 +59,7 @@ public class RedisConfig {
         // 设置对象的可见性，即指定哪些字段会被包含在序列化和反序列化的过程中
         objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
         // 启用默认的类型信息，即在序列化结果中包含对象的类信息，但只包含非final类的信息
+        // objectMapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);   // 方法废弃 @Deprecated
         objectMapper.activateDefaultTyping(LaissezFaireSubTypeValidator.instance, ObjectMapper.DefaultTyping.NON_FINAL, JsonTypeInfo.As.PROPERTY);
         // 禁用日期作为时间戳的写入方式，将日期序列化为字符串形式
         objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
